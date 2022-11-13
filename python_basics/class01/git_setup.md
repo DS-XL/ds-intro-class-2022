@@ -181,96 +181,6 @@ At this stage, you’ll receive a call that another issue is critical and you ne
 
 On the branch you'd like to merge into: `git merge <branch to be merged in>`
 
-## Please ignore the following section and refer to the new documentation [Git-setup-and-hw-instruction.md](https://github.com/emma-oc/ds-class-intro/blob/class02/Git-setup-and-hw-instruction.md) for instructions.
-
-<del># Task for the class:
-
-1. In terminal/command line, navigate to the folder you want to put this repo.
-
-2. **Only required if you haven't forked the repo:**
-
-	Fork the [class repo](https://github.com/emma-oc/ds-class-intro) to your GitHub account. Your repo should look something like `https://github.com/YOUR_USERNAME/ds-class-intro`
-
-2. **Only required if you haven't cloned the repo to local:**
-
- Clone the forked repo to your local directory (you only need to clone it once)
- 
-	```
-	git clone https://github.com/YOUR_USERNAME/ds-class-intro.git
-	cd ds-class-intro
-	```
-
-3. **Only if you forked and cloned older forked version of the repo:**
-
-	[Configure remote for the fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork)
-	- Check you remote of your fork: `git remote -v`
-	- Specify my remote upstream repo that will be synced wih your fork. `git remote add upstream https://github.com/emma-oc/ds-class-intro.git`
-	- Verify the new upstream repository you've specified for your fork by running `git remote -v`. You should now see at least 4 of them including `upstream` pull and fetch, and `origin` pull and fetch.
-	
-	[Sync a fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
-	
-	- Fetch the branches and their respective commits from the upstream repo by running `git fetch upstream`
-
-	- If you have modified files in your local branch, for example, branch `class01`, you might want to merge your
-
-3. Check your current branch
-
-	```
-	git branch -a
-	```
-
-	You'll see remote branches as `origin/[branch_name]`, upstream branches as `upstream/[branch_name]` in red, and your local branches in green. 
-
-4. Switch to branch `class02`
-
-	```
-	git branch class02 origin/class02
-	git checkout class02
-	```
-	
-	**Note**: *if you forked the repo earlier, modified the files, and want to keep these changes, you'll probably need to merge upstream changes to your local. If you don't care about your local commits,*
-	
-	```
-	# only run the follwoing if you need to sync upstream AND merge with your local commites
-	git merge upstream/class02
-	```
-	You can check again if the branches are in your local by `git branch -a`.
-	
-6. Navigate to the folder `class02`. Create a test file with your name
-
-	```
-	cd class02
-	touch <your_name.txt>
-	```
-
-6. Add the newly ceated file
-```
-git add <your_name.txt>
-```
-7. Commit the change
-```
-git commit -m "test git function"
-```
-8. push the change to remote repo
-
-	```
-	# you many need to do 'git pull' (pull the most recent change) first, if you see the promp
-	
-	git push
-	```
-	
-	If everything works out fine, you should see your pushed changes synced with you GitHub.</del>
-	
-	
-# Instructions for Homework 1 Submission:
-1. Create a new local branch named `homework01`. You will be working on your homework on this branch.
-2. Create a new jyputer notebook for `Exercise 3.` and `Exercise 4.`. Copy/Paste the problems is optional, but at least number your answers so we know which problem it is.
-3. Push your commits on the new branch `homework01` to your remote repo (you've learned this in the Git exercise above).
-4. Pull request your answers to `homework01` branch in you own forked repo following [Creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-5. Pull request your answers to `class02` branch in my original (upstream) repo following [Creating a pull request from a fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork). 
-	
-*Hint: you can try creating a branch from a specific branch by `git checkout -b [new branch name] [old branch name]`*
-
 
 ## Git Cheatsheet
 [PDF](https://education.github.com/git-cheat-sheet-education.pdf)
@@ -278,4 +188,4 @@ git commit -m "test git function"
 ## Interactive tutorial (highly recommend!)
 You can learn the basic ideas about version control, commits, branching, merging, pushing, and more at [https://learngitbranching.js.org/?locale=en_US](https://learngitbranching.js.org/?locale=en_US)
 
-Recommend at least finish first 8 levels in `Main` tab and first 4 in `Remote` tab.
+Recommend at least finish the first 8 levels in `Main` tab and the first 4 in `Remote` tab.
