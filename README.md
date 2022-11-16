@@ -32,13 +32,13 @@ You can run python in different settings, for example, you can use `jupyter` not
 
 	3. Value comparison and conditions using `if-elif-else`
 	4. Collections: list, tuple, set, and dictionary
-	*  Git - Commiting, Pushing, and Pull Request
 
 **Homework_01(Exercise0,3,4)** is due next class. Please refer to [homework submission instructions](https://github.com/DS-XL/ds-intro-class-2022/blob/master/Git-setup-and-hw-instruction.md) for how to open a pull request for submission.
 
 [class03](https://github.com/DS-XL/ds-intro-class-2022/tree/master/python_basics/class02):
 
 	5. Iteration: loops and comprehensions
+	*  Git - Commiting, Pushing, and Pull Request
 	*  HW01 review
 
 [class04](https://github.com/DS-XL/ds-intro-class-2022/tree/master/python_basics/class02)
