@@ -1,5 +1,5 @@
 '''
-Edit this file to complete Exercise 7
+Exercise 7
 '''
 
 # import the modules you need here
@@ -36,8 +36,14 @@ def check_path(path):
     '''
 
     # code up your solution here
-
-
+    exist_flag = False
+    path_info_list = []
+    if os.path.exists(path)==True:
+        exist_flag = True
+        path_info_list.append(os.path.isabs(path))
+        path_info_list.append(os.path.isdir(path))
+        path_info_list.append(os.path.isfile(path))
+    return exist_flag, path_info_list
 
 def read_csv(file):
     '''
@@ -55,8 +61,8 @@ def read_csv(file):
     '''
 
     # code up your solution here
-
-
+    with open(file) as f:
+        return sum(1 for row in f)
 
 def write_csv(data_list, output_file):
     '''
@@ -83,8 +89,10 @@ def write_csv(data_list, output_file):
     '''
 
     # code up your solution here
-
-
+    with open(output_file, 'w', newline='') as f:
+        writer = csv.writer(f)
+        for row in data_list:
+            writer.writerow(row)
 
 def read_json(file):
     '''
@@ -102,8 +110,9 @@ def read_json(file):
     '''
 
     # code up you solution here
-
-
+    with open(file) as f:
+        js = json.load(f)
+    return js
 
 if __name__=="__main__":
     pass
