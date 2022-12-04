@@ -45,18 +45,18 @@ You can run python in different settings, for example, you can use `jupyter` not
 
 	6. Writing functions
 
-**Homework_02 (Exercise 5, 6)** is assigned, it's due next Wednesday 11/30, but we'll start discussion/review on 11/27. [Sample answer] will be posted for reference.
+**Homework_02 (Exercise 5, 6)** is assigned, it's due next Wednesday 11/30, but we'll start discussion/review on 11/27. [Sample answer](https://github.com/DS-XL/ds-intro-class-2022/tree/master/python_basics/class02) is posted for reference.
 
 [class05](https://github.com/DS-XL/ds-intro-class-2022/tree/master/python_basics/class03)
 
 	7. Reading and writing files
 	8. Intro to code complexity and performance (if time permits)
+
+[Sample answer](https://github.com/DS-XL/ds-intro-class-2022/tree/master/python_basics/class03) for `exercise 7` is posted for reference.
+
+[class06](https://github.com/DS-XL/ds-intro-class-2022/tree/master/python_basics/class05)
+
 	9. Coding challenge example using HackerRank and LeetCode
-
-[Sample answer] for `exercise 7` will be posted for reference.
-
-[class06](https://github.com/DS-XL/ds-intro-class-2022/tree/master/python_basics/class04)
-
 	10. [Intro only] Object-oriented programming
 	a. SQL crash course / quick review
 	b. A/B testing discussion
