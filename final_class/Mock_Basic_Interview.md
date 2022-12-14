@@ -1,5 +1,7 @@
 # Mock Interview
 
+Please complete the following two modules as a mock interview round with a total time spent of around 1 hour. It's up to you to dicide how much time to spend on each problem, but I'd recommend spending >=30 minutes on data exploration to make sure you have meaningful results.
+
 ### Python basics
 Finish at least one of the following two problems and submit your solution on [HackRank.com](https://www.hackerrank.com)
 
@@ -14,7 +16,7 @@ Finish at least one of the following two problems and submit your solution on [H
 We will leverage this new kaggle dataset for a simple exercise.
 https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset 
 
-Data is available on Kaggle link above as well as in our repo as a `.zip` file [here](https://github.com/emma-data-works/ds-class-intro/blob/master/final_class/novel-corona-virus-2019-dataset.zip).
+Data is available on Kaggle link above as well as in our repo as a `.zip` file [here](https://github.com/DS-XL/ds-intro-class-2022/blob/master/final_class/novel-corona-virus-2019-dataset.zip).
 
 Tasks:
 
