@@ -2,6 +2,8 @@
 Edit this file to complete Exercise 7
 '''
 
+# os.listdir('/Users/dby/Desktop/DS_Projects/ds-intro-class-2022/python_basics/class03/') # test using examples under this path
+
 # import the modules you need here
 import os
 import csv
@@ -35,7 +37,28 @@ def check_path(path):
     >>> False, []
     '''
 
-    # code up your solution here
+    # test use os.getcwd(), os.listdir()
+    abs_path=[]
+    dir_path=[]
+    file_path=[]
+    if os.path.exists(path) == True : # if input path exists:
+        if os.path.isabs(path) == True  : # is a absolute path
+            abs_path = 'True'
+        elif os.path.isabs(path) != True :
+            abs_path = 'False'
+        if os.path.isdir(path) == True  : # is a directory
+            dir_path = 'True'
+        elif os.path.isdir(path) != True  :
+            dir_path = 'False'
+        if os.path.isfile(path) == True: # is a file
+            file_path = 'True'
+        elif os.path.isfile(path) != True :
+            file_path = 'False'
+        print('True, \n') 
+        print([abs_path, dir_path, file_path])
+    else : 
+        print('False , []')
+
 
 
 
@@ -54,7 +77,14 @@ def read_csv(file):
     >>> 14
     '''
 
-    # code up your solution here
+    data = []
+    with open(file, 'r') as f:
+        reader = csv.reader(f, delimiter=',')  # change delimiter
+        line = 0
+        for i in reader:
+            line = line+1
+        print(line)
+
 
 
 
@@ -82,7 +112,13 @@ def write_csv(data_list, output_file):
     9,10,11,12
     '''
 
-    # code up your solution here
+    with open(output_file, 'w', newline='') as f:
+        writer = csv.writer(f)
+        i = 0 
+        for row in data_list:
+            i += 1
+            writer.writerow(data_list[i-1]) # print index corresponding to row
+
 
 
 
@@ -101,7 +137,16 @@ def read_json(file):
     >>> [{'name': 'emma', 'skill': {'coding1': 'python', 'coding2': 'r'}, 'role': 0}]
     '''
 
-    # code up you solution here
+    with open(file) as f:
+        json_data = json.load(f) # list of data
+        # dict_jsitem = json_data[0].items()
+        dict_key = list(json_data[0].keys())
+        dict_value = list(json_data[0].values())
+        dict_js = dict(zip(dict_key, dict_value))
+        print(dict_js)
+
+
+
 
 
 
