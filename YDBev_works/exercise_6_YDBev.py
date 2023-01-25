@@ -22,10 +22,15 @@ def calculation(a, b):
 	diff: difference of two numbers
 	'''
 
-	# code up your solution here
+	addition = a+b
+	substraction = a-b
+	print(f'sum of two numbers: {addition}')
+	print(f'diff of two numbers: {substraction}')
 
 
 
+
+####### NOT SURE ABOUT the ask for this question, define within enclosed space  ######## 14JAN23
 def triangle_lambda():
 	'''
 	Return a lambda object that takes in a base and height of triangle
@@ -37,6 +42,13 @@ def triangle_lambda():
 	Returns:
 	lambda_triangle_area: the lambda
 	'''
+
+	print('lambda_triangle_area: the lambda')
+
+## use lambda function to calculate area 
+def triangle_lambda(base,height):
+    return (lambda base, height : 0.5*base*height)(base,height)
+
 
 
 
@@ -58,11 +70,14 @@ def sort_words(hyphen_str):
 	sorting them alphabetically
 	'''
 
-	# code up your solution here
+    hyphen_sep = hyphen_str.split('-')
+    hyphen_sep.sort()
+    print('-'.join(hyphen_sep))
 
 
 
-def perfect_number():
+
+def perfect_number(num):
 	'''
 	Write a Python function to check whether a number is perfect or not.
 
@@ -81,7 +96,22 @@ def perfect_number():
 	perfect: boolean, True if number is perfect
 	'''
 
-	# code up your answer here
+    divisor = []
+    for i in range(1,x+1):
+        if x%i==0:
+            divisor.append(i)
+    print(f'All divisors of {x}: {divisor}') 
+
+    # # def1: A perfect number is a positive integer that is equal to the sum of its proper positive divisors.
+    # x_perfect = x == sum(divisor[0:-1])
+
+    # def2: A perfect number is a number  that is half the sum of all of its positive divisors (including itself)
+    num_to_check = sum(divisor)/2
+    x_perfect = x == num_to_check
+    
+    print(f'Is {x} perfect?: {x_perfect}')
+
+
 
 
 if __name__ == '__main__':
